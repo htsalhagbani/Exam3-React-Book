@@ -13,7 +13,7 @@ function Book() {
     const navigate=useNavigate();
 
     const showallbooks=()=>{
-        axios.get('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=2MotIRyG5OZLAoMVgOFzYBUWExoh3PqQ')
+        axios.get('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=9IxTUXAARgvoGOVf8DvC5F6JX4olD3Lj')
         .then((response)=>{
             console.log(response.data.results.books);
             setbooks(response.data.results.books);   
@@ -63,7 +63,7 @@ showallbooks();
 
 </div>
     </header>
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-8 gap-4 justify-items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-16 gap-4   justify-items-center">
       {books.map((item,index)=>(
       <article key={index} className="flex bg-slate-100 max-sm:flex-col border rounded dark:border-gray-700/50 dark:bg-gray-800 max-w-md">
         <img className=" w-[140px] max-sm:w-full h-[200px] rounded-l" loading="lazy" src={item.book_image} alt="Anselm Kiefer" width="140" height="200"/>

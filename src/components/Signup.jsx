@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import logo from '../assets/bookss.jpeg'
 import { Link ,useNavigate} from 'react-router-dom'
 import axios from 'axios'
+import clip2 from '../assets/clip2.jpg'
+import clip from '../assets/clip.jfif'
 
 function Signup() {
     const [name,setname]=useState('');
@@ -49,12 +51,11 @@ function Signup() {
     }
 
   return (
-    <div className="font-[sans-serif] bg-[#ebd9d9] max-sm:w-full  ">
-    <div className="min-h-screen flex fle-col items-center justify-center py-6 px-4">
-      <div className="flex justify-center items-center md:max-w-6xl w-full">
-        <div className="border border-gray-300 bg-slate-100 rounded-lg p-6   max-sm:w-full max-lg:w-full lg:w-[30vw] shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
-      
-            <div className="mb-8">
+    <div class="font-[sans-serif] ">
+    <div class="min-h-screen flex fle-col items-center justify-center py-6 px-4">
+      <div class="grid md:grid-cols-2 items-center gap-4 max-w-6xl w-full">
+        <div class="border bg-slate-100 border-gray-300 rounded-lg p-6 md:w-full  lg:max-w-xl w-full shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
+        <div className="mb-8">
               <h3 className="text-3xl font-extrabold text-[#946c5b]">Sign Up</h3>
               <p className='text-[red] text-md mt-4'>{msg}</p>
               {/* <p class="text-gray-500 text-sm mt-4 leading-relaxed">Sign in to your account and explore a world of possibilities. Your journey begins here.</p> */}
@@ -91,9 +92,10 @@ function Signup() {
             <p className="text-sm !mt-8 text-left text-gray-800">If you have an account <Link to={'/login'} className="text-[#946c5b] font-semibold hover:underline ml-1 whitespace-nowrap">Login</Link></p>
           
         </div>
-        {/* <div class="lg:h-[400px] md:h-[300px] max-md:mt-8">
-          <img src={logo} class="w-full h-full max-md:w-4/5 mx-auto block  rounded-xl" alt="Dining Experience" />
-        </div> */}
+        
+        <div class="lg:h-[400px] md:h-[300px] max-md:mt-8">
+          <img src={clip2} class="w-full h-full max-md:w-4/5 mx-auto block rounded-2xl " alt="Dining Experience" />
+        </div>
       </div>
     </div>
   </div>

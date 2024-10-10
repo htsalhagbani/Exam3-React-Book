@@ -6,9 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Favourate() {
-    //2MotIRyG5OZLAoMVgOFzYBUWExoh3PqQ
-    
-    const navigate=useNavigate();
+        const navigate=useNavigate();
     const favourite=JSON.parse(localStorage.getItem('favourite'))||[];
 
   return (

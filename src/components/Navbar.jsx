@@ -39,7 +39,7 @@ const navigate=useNavigate();
       </ul>
     </div>
     {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
-  <Link to={'/home'}>  <img src={logo} className='w-16 h-16 rounded-full'/></Link>
+  <Link to={'/home'}>  <img src={logo} className='w-12 h-12 rounded-full'/></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

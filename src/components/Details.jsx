@@ -16,7 +16,7 @@ function Details() {
     console.log(rank);
 
     const getdetailsbook=()=>{
-        axios.get('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=2MotIRyG5OZLAoMVgOFzYBUWExoh3PqQ')
+        axios.get('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=9IxTUXAARgvoGOVf8DvC5F6JX4olD3Lj')
    .then((response)=>{
     console.log(response.data.results.books);
     let {results}=response.data;
@@ -51,7 +51,7 @@ getdetailsbook();
     
   return (
    <>
-   <div className=' w-full h-screen  max-md:h-full max-md:flex max-md:justify-center max-md:items-center max-md:flex-col  '>
+   <div className=' w-full min-h-screen  max-md:h-full max-md:flex max-md:justify-center max-md:items-center max-md:flex-col  bg-[orange] '>
     <Navbar/>
     {alertshow !== '' && (
 <div className="max-w-xl mx-auto my-2 mt-3  ">
@@ -65,7 +65,7 @@ getdetailsbook();
     </div>
   </div>
 </div>)}
-    <section className=" w-full flex justify-center items-center    p-4 md:p-20 antialiased ">
+    <section className=" w-full flex justify-center items-center   p-4 md:p-20 antialiased ">
     <article
         className=" flex bg-slate-100 flex-wrap md:flex-nowrap shadow-lg max-sm:w-full md:max-w-3xl  group cursor-pointer transform duration-500 hover:-translate-y-1">
         <img className="w-full max-h-[400px]  md:w-52" src={details.book_image} alt=""/>
@@ -82,7 +82,7 @@ getdetailsbook();
                 </p>
             </div>
             <div className=" p-5 w-full">
-                <div className="flex flex-col  items-start gap-3 ">
+                <div className="flex   items-start gap-3 ">
                     {/* <button onClick={addfav} class="mt-3 w-fit sm:mt-0 py-2 px-5 md:py-3 md:px-6 bg-none font-bold text-white md:text-lg rounded-lg shadow-md"> */}
                     <FaHeart onClick={addfav} className='text-[#946c5b]  hover:text-[red] w-6 h-6'/>            
                     {/* </button> */}
