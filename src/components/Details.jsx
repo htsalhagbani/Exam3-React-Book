@@ -51,7 +51,7 @@ getdetailsbook();
     
   return (
    <>
-   <div className=' w-full min-h-screen  max-md:h-full max-md:flex max-md:justify-center max-md:items-center max-md:flex-col  bg-[orange] '>
+   <div className=' w-full min-h-screen  max-md:h-full max-md:flex max-md:justify-center max-md:items-center max-md:flex-col  '>
     <Navbar/>
     {alertshow !== '' && (
 <div className="max-w-xl mx-auto my-2 mt-3  ">
